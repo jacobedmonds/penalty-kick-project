@@ -14,8 +14,10 @@ library(tidyverse)
 library(ggplot2)
 library(scales)
 library(viridis)
+install.packages("here")
+library(here)
+data <- read.csv(here("data", "Champ_Data.csv"))
 
-data <- read.csv("Champ_Data.csv")
 ```
 
 ```{r}
