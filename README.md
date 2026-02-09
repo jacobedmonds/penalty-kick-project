@@ -1,4 +1,4 @@
-# Penalty Kick Project (STOR 538)
+# Penalty Kick Project
 
 This project analyzes how **run-up step routines** relate to **shot placement** and **outcomes** in soccer penalty kicks. Using a hand-coded dataset of 300 penalty attempts, we study whether deviations from a kicker’s normal run-up length are associated with differences in accuracy or placement within the goal.
 
