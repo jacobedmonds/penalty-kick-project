@@ -10,16 +10,20 @@ knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE
 )
-library(tidyverse)
-library(ggplot2)
-library(scales)
-library(viridis)
-install.packages("here")
-library(here)
+
+pkgs <- c("tidyverse", "ggplot2", "scales", "viridis", "here")
+to_install <- pkgs[!pkgs %in% installed.packages()[, "Package"]]
+if (length(to_install)) {
+  install.packages(to_install)
+}
+
+lapply(pkgs, library, character.only = TRUE)
+
 data <- read.csv(here("data", "Champ_Data.csv"))
 
 ```
 
+## Data Cleaning and Preparation
 ```{r}
 data <- data %>% 
   rename(
@@ -101,6 +105,7 @@ data <- data %>%
 data$position <- as.factor(data$position)
 ```
 
+## Univariate Analysis
 ```{r}
 numeric_vars <- c("k_ability", "g_ability", "g_height", "steps", "spread")
 
@@ -125,6 +130,8 @@ ggplot(df_long, aes(x = "", y = value, fill = variable)) +
   scale_fill_brewer(palette = "Set2")
 
 ```
+
+### Categorical Variable Distributions
 ```{r}
 cat_vars <- c("position", "foot", "result")
 
@@ -146,6 +153,7 @@ ggplot(df_cat_long, aes(x = value, fill = variable)) +
   )
 ```
 
+## Spatial Heatmaps
 ```{r}
 goal_layout <- tibble(
   pos = factor(1:6),
@@ -154,6 +162,7 @@ goal_layout <- tibble(
 )
 ```
 
+### Ball Position Distribution
 ```{r}
 ball_stats <- data %>%
   count(ball_position) %>%
@@ -194,6 +203,8 @@ ggplot(ball_heat, aes(x = x, y = y, fill = perc)) +
   )
 
 ```
+
+### Goalkeeper Position Distribution
 ```{r}
 g_heat <- data %>%
   count(g_position) %>%
@@ -225,6 +236,8 @@ ggplot(g_heat, aes(x = x, y = y, fill = perc)) +
   )
 
 ```
+
+## Bivariate Analysis
 ```{r}
 ball_stats_res <- data %>%
   count(result, ball_position) %>%
@@ -271,8 +284,9 @@ ggplot(ball_heat_res, aes(x = x, y = y, fill = perc)) +
     caption = note_text,
     x = NULL, y = NULL
   )
-
 ```
+
+### Ball vs Goalkeeper Position
 ```{r}
 ball_all <- data %>%
   count(ball_position) %>%
@@ -395,6 +409,8 @@ ggplot(combined, aes(x = x, y = y, fill = ball_perc)) +
   )
 
 ```
+
+## Step-Based Analysis
 ```{r}
 data$goal_bin <- ifelse(data$result == "goal", 1, 0)
 
@@ -433,6 +449,8 @@ ggplot(steps_summary, aes(x = step_bin, y = goal_rate, fill = goal_rate)) +
   )
 
 ```
+
+## Step Routine Classification and Ball Placement
 ```{r}
 df_foot <- data %>%
   count(foot, result) %>%
@@ -604,7 +622,7 @@ ggplot(ball_steps, aes(x = x, y = y, fill = perc)) +
   )
 ```
 
-
+## Statistical Testing
 ```{r}
 test_data <- data %>%
   mutate(goal_vs_not = if_else(result == "goal", "Goal", "Not Goal")) %>%
