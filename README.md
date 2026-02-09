@@ -14,7 +14,7 @@ penalty-kick-project/
 ├── data/
 │ └── Champ_Data.csv
 ├── paper/
-│ └── Analyzing the Relationship Between Run Up Steps, Shot Placement, and Penalty Kick Success.pdf.pdf
+│ └── Analyzing the Relationship Between Run Up Steps, Shot Placement, and Penalty Kick Success.pdf
 ├── figures/
 │ ├── fig1_steps.pdf
 │ └── fig2_ball_steps.pdf
