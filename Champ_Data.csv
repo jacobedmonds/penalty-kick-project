@@ -1,0 +1,301 @@
+names,Date,Kicker Name,Kicker Position,(Lefty RIghty),Kicker Ability %,Quad. of Ball,GoalKeeper,Goalie %,Goalie Height (m),Kickers Steps,Quad. of Goalie,Missed/Saved/Goal,Spread(at the time
+David,23/03/2025,Cristiano Ronaldo,Centre-Forward,R,82,6,Kasper Schmeichel,27,1.89,11,6,Saved,0
+David,01/07/2018,Luka Modrić,Central Midfield,R,80,6,Kasper Schmeichel,27,1.89,9,6,Saved,0
+David,28/12/2021,Mohamed Salah ,Right Winger,L,83,4,Kasper Schmeichel,27,1.89,12,4,Saved,0
+David,31/03/2018,Glenn Murray,Centre-Forward,R,70,6,Kasper Schmeichel,27,1.89,4,6,Saved,0
+David,23/06/2020,Neal Maupay,Centre-Forward,R,65,4,Kasper Schmeichel,27,1.89,7,4,Saved,0
+David,21/06/2018,Mile Jedinak,Defensive Midfield,R,100,6,Kasper Schmeichel,27,1.89,4,4,Goal,-1
+David,02/11/2025,James Tavernier,Right-Back,R,80,4,Kasper Schmeichel,27,1.89,12,4,Goal,-1
+David,26/10/2025	,Lawrence Shankland,Centre-Forward,R,81,4,Kasper Schmeichel,27,1.89,9,4,Goal,1
+David,5/10/2025,Apostolos Stamatelopoulos,Centre-Forward,R,90,1,Kasper Schmeichel,27,1.89,7,4,Goal,0
+David,11/01/2025,Jordan White,Centre-Forward,R,74,6,Kasper Schmeichel,27,1.89,6,4,Goal,-1
+David,23/11/2022	,	Alphonso Davies,Left-Back,L,67,4,Thibaut Courtois,17,2,4,4,Saved,0
+David,16/04/2025	,Bukayo Saka,Right Winger,L,84,4,Thibaut Courtois,17,2,11,4,Saved,0
+David,02/11/2022,Josip Juranovic,Right-Back,R,75,4,Thibaut Courtois,17,2,5,4,Saved,-2
+David,16/01/2022,Raúl García,Attacking Midfield,R,79,5,Thibaut Courtois,17,2,4,5,Saved,-2
+David,23/08/2015	,James Morrison,Central Midfield,R,67,5,Thibaut Courtois,17,2,7,5,Saved,0
+David,05/07/2025,Serhou Guirassy,Centre-Forward,R,82,1,Thibaut Courtois,17,2,4,4,Goal,0
+David,18/06/2025	,Rúben Neves,Defensive Midfield,R,90,3,Thibaut Courtois,17,2,10,4,Goal,-1
+David,27/09/2025,Julián Alvarez,Centre-Forward,R,88,6,Thibaut Courtois,17,2,4,6,Goal,0
+David,13/09/2025,Mikel Oyarzabal,Centre-Forward,L,90,6,Thibaut Courtois,17,2,7,4,Goal,-2
+David,01/03/2025,Isco,Attacking Midfield,R,88,4,Thibaut Courtois,17,2,10,4,Goal,0
+David,01/07/2024,Cristiano Ronaldo,Centre-Forward,R,82,6,Jan Oblak,21,1.88,5,6,Saved,0
+David,09/01/2022,Gerard Moreno,Centre-Forward,L,79,4,Jan Oblak,21,1.88,9,4,Saved,-1
+David,21/03/2021	,Joselu,Centre-Forward,R,74,4,Jan Oblak,21,1.88,8,4,Saved,-1
+David,04/04/2021,Lucas Ocampos,Left Winger,R,89,6,Jan Oblak,21,1.88,7,6,Saved,0
+David,12/05/2018,Fayçal Fajr,Central Midfield,R,67,4,Jan Oblak,21,1.88,6,4,Saved,-1
+David,30/08/2025	,Carlos Vicente,Right Winger,R,100,6,Jan Oblak,21,1.88,5,4,Goal,-1
+David,15/06/2025	,Kang-in Lee,Right Winger,R,100,4,Jan Oblak,21,1.88,5,6,Goal,3
+David,14/04/2025,Mamadou Sylla,Centre-Forward,R,75,5,Jan Oblak,21,1.88,4,6,Goal,0
+David,11/12/2024,David Strelec,Centre-Forward,L,100,6,Jan Oblak,21,1.88,5,4,Goal,-2
+David,23/10/2024	,Jonathan David,Centre-Forward,R,78,2,Jan Oblak,21,1.88,5,4,Goal,0
+David,03/11/2025,Myrto Uzuni,Left Winger,R,76,5,Hugo Lloris,10,1.88,5,5,Saved,-2
+David,02/02/2020,İlkay Gündoğan,Central Midfield,R,81,6,Hugo Lloris,10,1.88,4,6,Saved,0
+David,09/04/2019,Sergio Agüero,Centre-Forward,R,77,4,Hugo Lloris,10,1.88,7,4,Saved,0
+David,02/03/2019,Pierre-Emerick Aubameyang,Centre-Forward,R,78,4,Hugo Lloris,10,1.88,6,4,Saved,0
+David,22/11/2016	,Radamel Falcao,Centre-Forward,R,74,4,Hugo Lloris,10,1.88,4,4,Saved,0
+David,03/11/2025,Daniel Pereira,Central Midfield,R,100,4,Hugo Lloris,10,1.88,7,4,Goal,-3
+David,20/07/2025,Gabriel Pec,Right Winger,L,50,4,Hugo Lloris,10,1.88,10,6,Goal,-2
+David,01/06/2025,Brian Rodríguez,Left Winger,R,100,5,Hugo Lloris,10,1.88,9,4,Goal,0
+David,25/05/2025	,Prince Owusu,Centre-Forward,L,89,6,Hugo Lloris,10,1.88,4,4,Goal,1
+David,20/04/2025,Felipe Mora,Centre-Forward,R,80,4,Hugo Lloris,10,1.88,6,4,Goal,0
+David,17/08/2024	,Junior Messias,Right Winger,L,0,5,Yann Sommer,17,1.83,4,5,Saved,0
+David,28/01/2024,	Nico González,Left Winger,R,86,4,Yann Sommer,17,1.83,4,4,Saved,-1
+David,27/09/2022,Tomáš Souček,Defensive Midfield,R,71,4,Yann Sommer,17,1.83,9,4,Saved,-1
+David,05/09/2021,Jorginho,Defensive Midfield,R,85,6,Yann Sommer,17,1.83,7,6,Saved,0
+David,14/11/2020	,Sergio Ramos,Centre-Back,R,86,2,Yann Sommer,17,1.83,6,2,Saved,-1
+David,25/10/2025,Kevin De Bruyne,Attacking Midfield,R,88,4,Yann Sommer,17,1.83,5,4,Goal,0
+David,31/08/2025,Keinan Davis,Centre-Forward,L,75,6,Yann Sommer,17,1.83,11,5,Goal,-1
+David,11/03/2025,Jakub Moder,Central Midfield,R,100,4,Yann Sommer,17,1.83,9,4,Goal,-1
+David,05/10/2024,Nikola Vlašić,Attacking Midfield,R,69,6,Yann Sommer,17,1.83,5,6,Goal,-2
+David,13/01/2024,Matteo Pessina,Central Midfield,L,93,4,Yann Sommer,17,1.83,5,5,Goal,1
+Jacob,25/05/2025,Erling Haaland,Centre-Forward,L,84,4,Bernd Leno,15,1.89,5,6,Goal,1
+Jacob,15/03/25 ,Erling Haaland,Centre-Forward,L,84,6,Bart Verbruggen,4,1.94,3,4,Goal,0
+Jacob,14/05/2024,Erling Haaland,Centre-Forward,L,84,1,Guglielmo Vicario,13,1.94,3,6,Goal,1
+Jacob,12/11/2023,Erling Haaland,Centre-Forward,L,84,4,Robert Sánchez,11,1.97,3,5,Goal,0
+Jacob,29/10/23  ,Erling Haaland,Centre-Forward,L,84,6,André Onana,14,1.9,3,4,Goal,0
+Jacob,09/11/2025,Erling Haaland,Centre-Forward,L,84,6,Giorgi Mamardashvili,26,1.97,3,6,Saved,0
+Jacob,11/10/2025,Erling Haaland,Centre-Forward,L,84,6,Daniel Peretz,29,1.9,4,6,Saved,0
+Jacob,21/04/2021,Erling Haaland,Centre-Forward,L,84,6,Andreas Luthe,20,1.95,4,6,Saved,0
+Jacob,30/03/2025,Erling Haaland,Centre-Forward,L,84,6,Kepa Arrizabalaga,24,1.88,3,6,Saved,0
+Jacob,26/03/2024,Erling Haaland,Centre-Forward,L,84,6,Marek Rodák,17,1.94,3,6,Saved,1
+Jacob,30/08/2025,Bruno Fernandes,Attacking Midfield,R,89,4,Martin Dúbravka,14,1.91,4,4,Goal,0
+Jacob,19/01/2025,Bruno Fernandes,Attacking Midfield,R,89,5,Bart Verbruggen,4,1.94,4,6,Goal,-1
+Jacob,03/11/2024,Bruno Fernandes,Attacking Midfield,R,89,4,Robert Sánchez,11,1.97,4,6,Goal,0
+Jacob,13/04/2024,Bruno Fernandes,Attacking Midfield,R,89,6,Neto,10,1.9,3,4,Goal,-1
+Jacob,09/03/2024,Bruno Fernandes,Attacking Midfield,R,89,6,Jordan Pickford,16,1.85,4,6,Goal,0
+Jacob,27/09/2025,Bruno Fernandes,Attacking Midfield,R,89,6,Caoimhín Kelleher,23,1.88,6,6,Saved,-1
+Jacob,24/08/2025,Bruno Fernandes,Attacking Midfield,R,89,7,Bernd Leno,15,1.9,11,4,Missed,0
+Jacob,06/12/2023,Bruno Fernandes,Attacking Midfield,R,89,4,Robert Sánchez,11,1.97,11,4,Saved,0
+Jacob,23/04/2022,Bruno Fernandes,Attacking Midfield,R,89,7,Aaron Ramsdale,15,1.9,11,4,Missed,-1
+Jacob,17/10/2020,Bruno Fernandes,Attacking Midfield,R,89,4,Karl Darlow,13,1.95,3,4,Saved,0
+Jacob,13/12/2022,Lionel Messi,Right Winger,L,78,3,Dominik Livakovic,22,1.88,5,6,Goal,0
+Jacob,07/12/2021,Lionel Messi,Right Winger,L,78,6,Simon Mignolet,22,1.93,6,2,Goal,2
+Jacob,16/02/2021,Lionel Messi,Right Winger,L,78,3,Keylor Navas,19,1.85,5,6,Goal,0
+Jacob,07/03/2020,Lionel Messi,Right Winger,L,78,3,Álex Remiro,16,1.91,3,6,Goal,0
+Jacob,09/11/2019,Lionel Messi,Right Winger,L,78,4,Rubén Blanco,4,1.88,8,6,Goal,0
+Jacob,30/11/2022,Lionel Messi,Right Winger,L,78,3,Wojciech Szczesny,22,1.95,6,3,Saved,0
+Jacob,02/05/2021,Lionel Messi,Right Winger,L,78,4,Jasper Cillessen,16,1.87,4,4,Saved,-1
+Jacob,16/02/2019,Lionel Messi,Right Winger,L,78,6,Jordi Masip,15,1.8,3,6,Saved,1
+Jacob,12/03/2016,Lionel Messi,Right Winger,L,78,6,Vicente Guaita,12,1.9,4,6,Saved,1
+Jacob,21/01/2015,Lionel Messi,Right Winger,L,78,6,Jan Oblak,21,1.88,6,6,Saved,0
+Jacob,04/10/2025,Vinicius Junior,Left Winger,R,64,4,Arnau Tenas,0,1.85,9,4,Goal,1
+Jacob,18/12/2024,Vinicius Junior,Left Winger,R,64,5,Carlos Moreno,10,1.9,6,5,Goal,2
+Jacob,05/11/2024,Vinicius Junior,Left Winger,R,64,2,Mike Maignan,22,1.91,11,4,Goal,-1
+Jacob,14/09/2024,Vinicius Junior,Left Winger,R,64,4,Álex Remiro,16,1.91,9,4,Goal,0
+Jacob,29/08/2024,Vinicius Junior,Left Winger,R,64,3,Jasper Cillessen,16,1.87,9,6,Goal,-1
+Jacob,01/11/2025,Vinicius Junior,Left Winger,R,64,4,Julen Agirrezabala,21,1.87,11,4,Saved,2
+Jacob,05/04/2025,Vinicius Junior,Left Winger,R,64,6,Giorgi Mamardashvili,26,1.97,9,6,Saved,0
+Jacob,12/03/2025,Vinicius Junior,Left Winger,R,64,7,Jan Oblak,21,1.88,10,6,Missed,-1
+Jacob,14/11/2024,Vinicius Junior,Left Winger,R,64,5,Rafael Romo,19,1.97,8,5,Saved,0
+Jacob,13/10/2018,Vinicius Junior,Left Winger,R,64,7,Luis Ureta,11,1.79,12,6,Missed,0
+Jacob,14/09/2025,Mohamed Salah,Right Winger,L,83,3,Martin Dúbravka,14,1.91,9,4,Goal,0
+Jacob,08/03/2025,Mohamed Salah,Right Winger,L,83,1,Aaron Ramsdale,15,1.9,9,4,Goal,0
+Jacob,08/04/2025,Mohamed Salah,Right Winger,L,83,3,Aaron Ramsdale,15,1.9,9,4,Goal,1
+Jacob,16/02/2025,Mohamed Salah,Right Winger,L,83,2,José Sá,13,1.92,11,6,Goal,1
+Jacob,01/02/2025,Mohamed Salah,Right Winger,L,83,6,Kepa Arrizabalaga,24,1.88,11,6,Goal,0
+Jacob,01/01/2024,Mohamed Salah,Right Winger,L,83,2,Martin Dúbravka,14,1.91,5,2,Saved,0
+Jacob,19/08/2023,Mohamed Salah,Right Winger,L,83,6,Neto,10,1.9,9,6,Saved,0
+Jacob,09/04/2023,Mohamed Salah,Right Winger,L,83,7,Aaron Ramsdale,15,1.9,9,4,Missed,-1
+Jacob,11/03/2023,Mohamed Salah,Right Winger,L,83,7,Neto,10,1.9,10,6,Missed,-1
+Jacob,15/09/2021,Mohamed Salah,Right Winger,L,83,5,Mike Maignan,22,1.91,11,5,Saved,1
+Jassenia,05/12/2022,neymar jr ,left winger ,R,81,6,seung-gyu kim,15.0,1.87,8,4,goal,1
+Jassenia,28/08/2022,neymar jr ,left winger ,R,81,4,Alexander Nübel,4.0,1.93,12,4,goal,-1
+Jassenia,13/06/2021,neymar jr ,left winger ,R,81,6,Joel Graterol,19.0,1.82,11,4,goal,1
+Jassenia,24/11/2020,neymar jr ,left winger ,R,81,6,Péter Gulácsi,19.0,1.93,9,6,goal,0
+Jassenia,08/03/2017,neymar jr ,left winger ,R,81,6,Kevin Trapp,25.0,1.89,8,4,goal,2
+Jassenia,19/10/2016,neymar jr ,left winger ,R,81,6,Willy Caballero,16.0,1.86,7,6,saved,3
+Jassenia,11/02/2015,neymar jr ,left winger ,R,81,4,Sergio Asenjo,20.0,1.89,5,4,saved,2
+Jassenia,19/02/2022,neymar jr ,left winger ,R,81,6,Alban Lafont,13.0,1.96,7,6,missed,-2
+Jassenia,15/11/2012,neymar jr ,left winger ,R,81,7,David Ospina,8.0,1.83,4,5,saved,0
+Jassenia,29/09/2023,neymar jr ,left winger ,R,81,1,Seung-gyu Kim,15.0,1.87,6,1,saved,0
+Jassenia,16/06/2018,luca modric ,central midfield ,R,81,4,Francis Uzoho,14.0,1.96,5,5,goal,1
+Jassenia,15/05/2011,luca modric ,central midfield ,R,81,2,Pepe Reina,15.0,1.88,4,4,goal,1
+Jassenia,07/11/2022,luca modric ,central midfield ,R,81,6,Joe Hart,20.0,1.96,6,4,goal,0
+Jassenia,13/06/2022,luca modric ,central midfield ,R,81,4,Mike Maignan,22.0,1.91,2,4,goal,0
+Jassenia,29/03/2022,luca modric ,central midfield ,R,81,1,Svetoslav Vutsov,50.0,1.9,8,5,goal,-1
+Jassenia,01/07/2018,luca modric ,central midfield ,R,81,6,Kasper Schmeichel,21.0,1.89,10,6,saved,0
+Jassenia,12/12/2023,luca modric ,central midfield ,R,81,5,Frederik Rönnow,17.0,1.88,8,4,saved,0
+Jassenia,24/06/2024,luca modric ,central midfield ,R,81,4,Gianluigi Donnarumma,25.0,1.96,5,4,saved,0
+Jassenia,08/02/2023,luca modric ,central midfield ,R,81,5,Mohamed El Shenawy,18.0,1.91,6,5,saved,1
+Jassenia,08/10/2021,luca modric ,central midfield ,R,81,4,Neofytos Michail,22.0,1.91,2,4,saved,0
+Jassenia,08/12/2020,Cristiano ronaldo,Centre Forward,R,81,5,Marc-André ter Stegen,16.0,1.87,5,6,Goal,0
+Jassenia,07/08/2020,Cristiano ronaldo,Centre Forward,R,81,6,Anthony Lopes,13.0,1.84,7,4,Goal,-1
+Jassenia,12/03/2019,Cristiano ronaldo,Centre Forward,R,81,4,Jan Oblak,21.0,1.88,7,6,Goal,0
+Jassenia,11/04/2018,Cristiano ronaldo,Centre Forward,R,81,3,Gianluigi Buffon,26.0,1.92,5,6,Goal,-3
+Jassenia,17/10/2017,Cristiano ronaldo,Centre Forward,R,81,6,Hugo Lloris,10.0,1.88,5,4,Goal,-1
+Jassenia,12/06/2020,Cristiano ronaldo,Centre Forward,R,81,7,Gianluigi Donnarumma,25.0,1.96,5,4,Miss,0
+Jassenia,26/07/2020,Cristiano ronaldo,Centre Forward,R,81,7,Emil Audero,15.0,1.92,4,4,Miss,2
+Jassenia,16/12/2020,Cristiano ronaldo,Centre Forward,R,81,6,Pierluigi Gollini,13.0,1.94,3,6,Save,0
+Jassenia,05/05/2021,Cristiano ronaldo,Centre Forward,R,81,4,Samir Handanovič,28.0,1.93,3,4,Save,0
+Jassenia,01/02/2021,Cristiano ronaldo,Centre Forward,R,81,4,Gavin Bazunu,16.0,1.88,5,4,Save,0
+Jassenia,17/02/2018,Robert Lewandowski,Centre Forward,R,81,6,Koen Casteels,23.0,1.97,5,6,Goal,0
+Jassenia,10/03/2018,Robert Lewandowski,Centre Forward,R,81,6,Christian Mathenia,11.0,1.9,3,6,Goal,5
+Jassenia,17/02/2025,Robert Lewandowski,Centre Forward,R,81,4,Augusto Batalla,20.0,1.86,5,6,goal,0
+Jassenia,07/11/2018,Robert Lewandowski,Centre Forward,R,81,3,Vasilios Barkas,12.0,1.96,6,4,Goal,0
+Jassenia,12/12/2018,Robert Lewandowski,Centre Forward,R,81,4,Andre Onana,14.0,1.9,9,6,Goal,-1
+Jassenia,05/10/2025,Robert Lewandowski,Centre Forward,R,81,7,Odysseas Vlachodimos,13.0,1.91,9,4,Miss,-1
+Jassenia,22/11/2022,Robert Lewandowski,Centre Forward,R,81,6,Guillermo Ochoa,12.0,1.85,11,6,Save,0
+Jassenia,04/05/2013,Robert Lewandowski,Centre Forward,R,81,6,Manuel Neuer,22.0,1.93,8,6,Save,0
+Jassenia,07/09/2010,Robert Lewandowski,Centre Forward,R,81,6,Adam Federici,14.0,1.88,6,6,Save,-1
+Jassenia,17/08/2014,Robert Lewandowski,Centre Forward,R,81,6,Daniel Masuch,26.0,1.9,9,6,Save,3
+Jassenia,31/01/2015,harry kane,Centre Forward,R,81,2,Ben Foster,16.0,1.93,4,6,goal,2
+Jassenia,21/03/2015,harry kane,Centre Forward,R,81,4,Kasper Schmeichel,21.0,1.89,3,5,goal,0
+Jassenia,25/10/2015,harry kane,Centre Forward,R,81,6,Artur Boruc,19.0,1.93,3,4,goal,-1
+Jassenia,04/02/2018,harry kane,Centre Forward,R,81,6,Loris Karius,25.0,1.91,3,4,goal,-1
+Jassenia,30/04/2024,harry kane,Centre Forward,R,81,4,Andriy Lunin,30.0,1.91,4,6,goal,0
+Jassenia,10/09/2019,harry kane,Centre Forward,R,81,4,Arijanet Murić,26.0,1.98,3,4,saved,2
+Jassenia,28/08/2022,harry kane,Centre Forward,R,81,1,Dean Henderson,39.0,1.88,2,1,saved,1
+Jassenia,28/12/2016,harry kane,Centre Forward,R,81,7,Fraser Forster,27.0,2.01,4,4,missed,1
+Jassenia,22/05/2016,harry kane,Centre Forward,R,81,1,Volkan Babacan,15.0,1.92,4,4,saved,0
+Jassenia,10/12/2022,harry kane,Centre Forward,R,81,7,Hugo Lloris,10.0,1.88,4,1,missed,-1
+Sarah,06/04/2016,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Joe Hart,20.27,1.96,3,4,Saved,0
+Sarah,30/01/2021,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Lukasz Skorupski,20.27,1.88,3,4,Saved,0
+Sarah,08/08/2014,Zlatan Ibrahimović,Centre-Forward,R,83.65,6,Johny Placide,15.38,1.81,4,6,Saved,1
+Sarah,29/10/2020,Zlatan Ibrahimović,Centre-Forward,R,83.65,7,Milan Heca,6.45,1.87,4,4,Missed,1
+Sarah,04/03/2017,Zlatan Ibrahimović,Centre-Forward,R,83.65,7,Artur Boruc,18.57,1.93,4,4,Missed,0
+Sarah,14/04/2019,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Andre Blake,25.53,1.88,3,6,Goal,1
+Sarah,19/08/2016,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Fraser Forster,26.67,2.01,4,6,Goal,1
+Sarah,06/05/2012,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Júlio César,20.69,1.86,4,5,Goal,-1
+Sarah,18/08/2019,Zlatan Ibrahimović,Centre-Forward,R,83.65,4,Stefan Frei,7.35,1.95,4,4,Goal,0
+Sarah,01/04/2019,Zlatan Ibrahimović,Centre-Forward,R,83.65,3,Jeff Attinella,19.35,1.88,4,5,Goal,0
+Sarah,05/04/2017,Eden Hazard,Left Winger,R,86.89,6,	Willy Caballero,15.79,1.86,2,6,Saved,1
+Sarah,16/09/2015,Eden Hazard,Left Winger,R,86.89,7,Predrag Rajković,26.92,1.91,1,5,Missed,0
+Sarah,10/10/2015,Eden Hazard,Left Winger,R,86.89,1,	Ferran Pol,18.18,1.82,3,1,Saved,3
+Sarah,05/11/2014,Eden Hazard,Left Winger,R,86.89,5,	Jasmin Handanovic,20,1.96,2,5,Saved,0
+Sarah,05/12/2012,Eden Hazard,Left Winger,R,86.89,6,Jesper Hansen,21.74,1.88,3,6,Saved,0
+Sarah,19/05/2018,Eden Hazard,Left Winger,R,86.89,6,David de Gea,18.07,1.92,2,4,Goal,0
+Sarah,09/11/2013,Eden Hazard,Left Winger,R,86.89,6,Boaz Myhill,12.12,1.91,3,4,Goal,-1
+Sarah,02/04/2014,Eden Hazard,Left Winger,R,86.89,4,	Salvatore Sirigu,15.29,1.92,2,6,Goal,-1
+Sarah,23/06/2018,Eden Hazard,Left Winger,R,86.89,4,Farouk Mustapha,17.31,1.92,2,6,Goal,0
+Sarah,26/12/2016	,Eden Hazard,Left Winger,R,86.89,6,	Artur Boruc,18.57,1.93,2,5,Goal,1
+Sarah,21/06/2010,David Villa,Centre-Forward,R,84.95,7,Noel Valladares,16.67,1.79,4,5,Missed,2
+Sarah,20/04/2013,David Villa,Centre-Forward,L,84.95,6,Keylor Navas,19.44,1.85,4,6,Saved,0
+Sarah,29/05/2016,David Villa,Centre-Forward,L,84.95,7,Joe Bendik,9.09,1.91,3,5,Missed,2
+Sarah,18/04/2014,David Villa,Centre-Forward,L,84.95,5,Manu Herrera,4.17,1.82,3,5,Saved,0
+Sarah,12/07/2015,David Villa,Centre-Forward,R,84.95,6,Chris Konopka,28.57,1.97,3,6,Saved,1
+Sarah,01/08/2015,David Villa,Centre-Forward,R,84.95,4,Evan Bush,18.87,1.88,3,4,Goal,-2
+Sarah,12/10/2010,David Villa,Centre-Forward,R,84.95,6,	Allan McGregor,29.03,1.83,4,6,Goal,0
+Sarah,13/03/2016,David Villa,Centre-Forward,R,84.95,5,Clint Irwin,10.34,1.91,5,5,Goal,0
+Sarah,23/08/2015,David Villa,Centre-Forward,R,84.95,6,Donovan Ricketts,8.7,1.93,3,4,Goal,-4
+Sarah,07/08/2017,David Villa,Centre-Forward,R,84.95,4,	Luis Robles,19.64,1.8,4,6,Goal,0
+Sarah,19/02/2012,Luis Suárez,Centre-Forward,R,80.82,6,Peter Brezovan,30,1.98,5,6,Saved,4
+Sarah,16/11/2016,Luis Suárez,Centre-Forward,R,80.82,6,Claudio Bravo,18.03,1.84,6,6,Saved,-2
+Sarah,17/02/2016,Luis Suárez,Centre-Forward,R,80.82,4,Iván Cuéllar,20.37,1.87,4,4,Saved,1
+Sarah,13/08/2011,Luis Suárez,Centre-Forward,R,80.82,7,Simon Mignolet,22.1,1.93,5,4,Missed,0
+Sarah,12/02/2022,Luis Suárez,Centre-Forward,R,80.82,4,David Soria,19.61,1.92,3,4,Saved,0
+Sarah,19/08/2025,Luis Suárez,Centre-Forward,R,80.82,2,Nahuel Guzmán,10.94,1.91,5,4,Goal,0
+Sarah,25/09/2025,Luis Suárez,Centre-Forward,R,80.82,4,Matt Freese,23.81,1.93,5,6,Goal,2
+Sarah,28/10/2018,Luis Suárez,Centre-Forward,R,80.82,5,Thibaut Courtois,17.33,2,5,4,Goal,1
+Sarah,16/10/2013,Luis Suárez,Centre-Forward,R,80.82,1,Sergio Romero,30.61,1.92,5,4,Goal,0
+Sarah,02/09/2018,Luis Suárez,Centre-Forward,R,80.82,2,	Axel Werner,10,1.91,4,5,Goal,5
+Sarah,28/05/2016,Antoine Griezmann,Second Striker,L,64.1,6,Keylor Navas,19.44,1.85,5,6,Missed,-1
+Sarah,25/01/2024,Antoine Griezmann,Second Striker,L,64.1,7,Ørjan Nyland,16.67,1.92,3,6,Missed,0
+Sarah,07/09/2019,Antoine Griezmann,Second Striker,L,64.1,2,Thomas Strakosha,8.82,1.93,4,5,Missed,2
+Sarah,05/09/2020,Antoine Griezmann,Second Striker,L,64.1,7,Robin Olsen,10.26,1.96,4,6,Missed,1
+Sarah,10/09/2019,Antoine Griezmann,Second Striker,L,64.1,2,Josep Antoni,15.79,1.81,2,2,Saved,1
+Sarah,07/07/2016,Antoine Griezmann,Second Striker,L,64.1,1,Manuel Neuer,21.79,1.93,6,6,Goal,0
+Sarah,13/04/2016,Antoine Griezmann,Second Striker,L,64.1,6,Marc-André ter Stegen,16.22,1.87,5,6,Goal,1
+Sarah,15/07/2018,Antoine Griezmann,Second Striker,L,64.1,4,Danijel Subasic,28.85,1.91,4,6,Goal,0
+Sarah,30/06/2018,Antoine Griezmann,Second Striker,L,64.1,4,Franco Armani,15.15,1.89,4,6,Goal,0
+Sarah,16/06/2018,Antoine Griezmann,Second Striker,L,64.1,6,Mathew Ryan,16.67,1.84,2,5,Goal,0
+Blake,20/03/2025,Andrej Kramaric,Attacking Midfield,R,88.00%,5,Mike Maignan,22.00%,1.91,18,4,Saved,0
+Blake,18/04/2023,Khvicha Kvaratskhelia,Left Winger,R,67.00%,4,Mike Maignan,22.00%,1.91,9,4,Saved,1
+Blake,24/03/2023,Memphis Depay,Centre-Forward,R,76.00%,6,Mike Maignan,22.00%,1.91,3,6,Saved,4
+Blake,15/09/2021,Mohamed Salah,Right Winger,L,83.00%,4,Mike Maignan,22.00%,1.91,11,4,Saved,-1
+Blake,02/11/2025,Paulo Dybala,Second Striker,L,88.00%,6,Mike Maignan,22.00%,1.91,4,6,Saved,1
+Blake,16/09/2023,Hakan Çalhanoğlu,Defensive Midfield,R,90.00%,5,Mike Maignan,22.00%,1.91,3,6,Goal,-4
+Blake,28/09/2021,Luis Suárez,Centre-Forward,R,81.00%,5,Mike Maignan,22.00%,1.91,5,4,Goal,0
+Blake,03/10/2021,Duván Zapata,Centre-Forward,R,69.00%,2,Mike Maignan,22.00%,1.91,5,4,Goal,2
+Blake,22/12/2021,Andrea Pinamonti,Centre-Forward,R,83.00%,6,Mike Maignan,22.00%,1.91,5,5,Goal,3
+Blake,28/11/2023,Marco Reus,Attacking Midfield,R,79%,1,Mike Maignan,22.00%,1.91,3,4,Goal,0
+Blake,17/08/2013,Jonathan Walters,Right Winger,R,72%,4,Simon Mignolet,22.00%,1.93,5,4,Saved,1
+Blake,22/03/2015,Wayne Rooney,Centre-Forward,R,79%,4,Simon Mignolet,22.00%,1.93,9,4,Saved,-1
+Blake,20/03/2016,Sadio Mané,Left Winger,R,75%,4,Simon Mignolet,22.00%,1.93,3,4,Saved,-2
+Blake,14/08/2016,Theo Walcott,Right Winger,R,0%,4,Simon Mignolet,22.00%,1.93,5,4,Saved,0
+Blake,15/08/2017,Andrej Kramaric,Attacking Midfield,R,88.00%,4,Simon Mignolet,22.00%,1.93,8,4,Saved,0
+Blake,04/03/2025,Marco Asensio,Attacking Midfield,L,78%,3,Simon Mignolet,22%,1.93,9,6,Goal,-2
+Blake,23/02/2025,Andi Zeqiri,Centre-Forward,L,40%,4,Simon Mignolet,22%,1.93,7,4,Goal,0
+Blake,19/10/2024,Allahyar Sayyadmanesh,Left Winger,R,100%,6,Simon Mignolet,22%,1.93,9,5,Goal,1
+Blake,18/09/2024,Serhou Guirassy,Centre-Forward,R,82%,5,Simon Mignolet,22%,1.93,11,4,Goal,-3
+Blake,11/08/2024,Jarne Steuckers,Attacking Midfield,R,67%,6,Simon Mignolet,22%,1.93,7,6,Goal,1
+Blake,19/10/2022,Jarrod Bowen,Right Winger,L,70%,4,Alisson Becker,22%,1.93,10,4,Saved,1
+Blake,07/09/2022,Victor Osimhen,Centre-Forward,R,81%,6,Alisson Becker,22%,1.93,11,6,Saved,-1
+Blake,20/09/2020,Jorginho,Defensive Midfield,R,85%,5,Alisson Becker,22%,1.93,3,5,Saved,2
+Blake,15/11/2019,Lionel Messi,Right Winger,L,78%,3,Alisson Becker,22%,1.93,6,3,Saved,0
+Blake,28/04/2018,Roberto Inglese,Centre-Forward,R,58%,6,Alisson Becker,22%,1.93,10,6,Saved,2
+Blake,30/09/2025,Victor Osimhen,Centre-Forward,R,81%,6,Alisson Becker,22%,1.93,11,4,Goal,-1
+Blake,16/11/2023,Miguelito,Attacking Midfield,R,88%,4,Alisson Becker,22%,1.93,7,5,Goal,-1
+Blake,10/08/2025,Jean-Philippe Mateta,Centre-Forward,R,88%,6,Alisson Becker,22%,1.93,7,5,Goal,0
+Blake,29/10/2023,Cole Palmer,Attacking Midfield,L,95%,3,Alisson Becker,22%,1.93,7,6,Goal,-2
+Blake,03/09/2022,Jean-Philippe Mateta,Centre-Forward,R,88%,6,Alisson Becker,22%,1.93,7,4,Goal,-1
+Blake,10/04/2022,Roger Martí,Centre-Forward,R,82%,4,Marc-André ter Stegen,16%,1.87,10,4,Saved,-1
+Blake,03/03/2021,Lucas Ocampos,Left Winger,R,89%,6,Marc-André ter Stegen,16%,1.87,7,6,Saved,1
+Blake,12/05/2020,Maxi Gómez,Centre-Forward,R,75%,4,Marc-André ter Stegen,16%,1.87,9,4,Saved,0
+Blake,19/10/2019,Marco Reus,Attacking Midfield,R,79%,3,Marc-André ter Stegen,16%,1.87,7,3,Saved,0
+Blake,12/08/2018,Wissam Ben Yedder,Centre-Forward,R,89%,5,Marc-André ter Stegen,16%,1.87,7,5,Saved,1
+Blake,24/08/2024,Oihan Sancet,Attacking Midfield,R,88%,6,Marc-André ter Stegen,16%,1.87,7,4,Goal,0
+Blake,29/04/2024,Pepelu,Defensive Midfield,R,90%,4,Marc-André ter Stegen,16%,1.87,7,6,Goal,-1
+Blake,21/04/2024,Vinicius Junior,Left Winger,R,64%,6,Marc-André ter Stegen,16%,1.87,7,5,Goal,0
+Blake,16/03/2024,Kylian Mbappé,Centre-Forward,R,81%,3,Marc-André ter Stegen,16%,1.87,10,1,Goal,-2
+Blake,12/09/2023,Antoine Griezmann,Second Striker,L,64%,1,Marc-André ter Stegen,16%,1.87,9,3,Goal,1
+Blake,09/11/2025,Lorenzo Colombo,Centre-Forward,L,60%,6,David de Gea,18%,1.92,11,6,Saved,0
+Blake,06/10/2024,Tammy Abraham,Centre-Forward,R,80%,6,David de Gea,18%,1.92,11,6,Saved,1
+Blake,16/02/2024,Theo Hernández,Left-Back,L,57%,4,David de Gea,18%,1.92,7,4,Saved,1
+Blake,28/05/2023,Aleksandar Mitrović,Centre-Forward,R,73%,5,David de Gea,18%,1.92,11,5,Saved,-1
+Blake,20/11/2021,Ismaïla Sarr,Right Winger,R,75%,6,David de Gea,18%,1.92,9,6,Saved,0
+Blake,29/10/2025,Hakan Çalhanoğlu,Defensive Midfield,R,90%,1,David de Gea,18%,1.92,7,5,Goal,-3
+Blake,19/10/2025,Rafael Leão,Left Winger,R,80%,6,David de Gea,18%,1.92,7,4,Goal,-1
+Blake,13/09/2025,Kevin De Bruyne,Attacking Midfield,R,88%,3,David de Gea,18%,1.92,7,1,Goal,-1
+Blake,13/03/2025,Logan Delarulier-Chabot,Right Winger,R,50%,4,David de Gea,18%,1.92,7,6,Goal,1
+Blake,04/01/2025,Fotis Ioannidis,Centre-Forward,R,85%,6,David de Gea,18%,1.92,10,5,Goal,2
+Nicola,06/03/2019,Marcus Rashford,Left Winger,R,91%,1,Gianluigi Buffon,28%,"1,92",11,4,Goal,1
+Nicola,06/11/2018,Lorenzo Insigne,Left Winger,R,80%,4,Gianluigi Buffon,28%,"1,92",9,4,Goal,-1
+Nicola,20/03/2016,Andrea Belotti,Centre-Forward,R,80%,4,Gianluigi Buffon,28%,"1,92",5,5,Goal,-2
+Nicola,13/08/2017,Ciro Immobile,Forward,R,82%,6,Gianluigi Buffon,28%,"1,92",11,6,Goal,0
+Nicola,28/11/2018,James Milner,Central Midfield,R,86%,6,Gianluigi Buffon,28%,"1,92",6,6,Goal,-2
+Nicola,23/05/2015,Lorenzo Insigne,Left Winger,R,80%,4,Gianluigi Buffon,28%,"1,92",6,4,Saved,0
+Nicola,12/12/2011,Francesco Totti,Second Striker,R,81%,4,Gianluigi Buffon,28%,"1,92",9,4,Saved,0
+Nicola,13/06/2008,Adrian Mutu,Winger,R,79%,6,Gianluigi Buffon,28%,"1,92",4,6,Saved,0
+Nicola,14/05/2003,Luis Figo,Right Winger,R,81%,5,Gianluigi Buffon,28%,"1,92",7,5,Saved,-2
+Nicola,08/03/1998,Ronaldo,Centre-Forward,R,86%,6,Gianluigi Buffon,28%,"1,92",6,6,Saved,0
+Nicola,29/09/2019,Erick Pulgar,Defensive Midfield,R,86%,4,Gianluigi Donnarumma,28%,"1,96",9,6,Goal,0
+Nicola,1/11/2020,Rodrigo De Paul,Central Midfield,R,77%,1,Gianluigi Donnarumma,28%,"1,96",4,4,Goal,-1
+Nicola,17/03/2019,Lautaro Martinez,Centre-Forward,R,65%,5,Gianluigi Donnarumma,28%,"1,96",5,5,Goal,1
+Nicola,1/10/2025,Eric Dier,Centre-Back,R,100%,6,Gianluigi Donnarumma,28%,"1,96",4,4,Goal,-1
+Nicola,11/10/2022,João Mário,Attacking Midfield,R,87%,2,Gianluigi Donnarumma,28%,"1,96",5,6,Goal,-1
+Nicola,24/062024,Luka Modric,Central Midfield ,R,80%,6,Gianluigi Donnarumma,28%,"1,96",5,6,Saved,0
+Nicola,29/09/2019,Federico Chiesa,Right Winger,R,67%,5,Gianluigi Donnarumma,28%,"1,96",4,5,Saved,2
+Nicola,3/11/2021,André Silva,Centre-Forward,R,78%,5,Gianluigi Donnarumma,28%,"1,96",4,5,Saved,1
+Nicola,15/10/2017,Mauro Icardi,Centre-Forward,R,80%,7,Gianluigi Donnarumma,28%,"1,96",8,5,Missed,1
+Nicola,23/12/2020,Ciro Immobile,Forward,R,82%,4,Gianluigi Donnarumma,28%,"1,96",7,4,Saved,-2
+Nicola,17/04/2025,Alexandre Lacazette,Centre-Forward,R,84%,4,Andrè Onana,14%,"1,90",5,6,Goal,1
+Nicola,13/03/2025,Mikel Oyarzabal,Centre-Forward,L,90%,6,Andrè Onana,14%,"1,90",3,4,Goal,0
+Nicola,06/03/2025,Mikel Oyarzabal,Centre-Forward,L,90%,1,Andrè Onana,14%,"1,90",6,6,Goal,-1
+Nicola,22/12/2024,Justin Kluivert,Attacking Midfield,R,89%,2,Andrè Onana,14%,"1,90",3,6,Goal,1
+Nicola,27/10/2024,Jarrod Bowen,Right Winger,L,70%,6,Andrè Onana,14%,"1,90",4,6,Goal,0
+Nicola,14/09/2024,Cameron Archer,Centre-Forward,R,0%,1,Andrè Onana,14%,"1,90",4,1,Saved,0
+Nicola,08/06/2024,Kevin Lenini,Defensive Midfield,R,0%,6,Andrè Onana,14%,"1,90",4,6,Saved,-3
+Nicola,24/10/2023,Jordan Larsson,Right Winger,L,57%,3,Andrè Onana,14%,"1,90",5,3,Saved,-1
+Nicola,24/01/19,Sam Lammers,Centre-Forward,L,71%,6,Andrè Onana,14%,"1,90",4,6,Saved,-2
+Nicola,01/04/2018,Mimoun Mahi,Left Winger,R,69%,4,Andrè Onana,14%,"1,90",4,4,Saved,1
+Nicola,27/01/2024,Ermedin Demirovic,Centre-Forward,R,67%,4,Manuel Neuer,22%,"1,93",4,6,Goal,-3
+Nicola,29/06/2025,Jorginho,Defensive Midfield,R,85%,4,Manuel Neuer,22%,"1,93",4,6,Goal,-2
+Nicola,22/01/2025,Santiago Gimenez,Centre-Forward,L,75%,1,Manuel Neuer,22%,"1,93",4,4,Goal,1
+Nicola,25/08/2024,Lovro Majer,Attacking Midfield,L,94%,4,Manuel Neuer,22%,"1,93",4,6,Goal,-1
+Nicola,14/02/2024,Ciro Immobile,Forward,R,82%,6,Manuel Neuer,22%,"1,93",9,4,Goal,0
+Nicola,27/01/2024,Sven Michel,Left Winger,L,80%,6,Manuel Neuer,22%,"1,93",4,6,Saved,-2
+Nicola,22/05/2021,Daniel Caligiuri,Right Winger,R,91%,2,Manuel Neuer,22%,"1,93",3,2,Saved,-2
+Nicola,16/11/2019,Igor Stasevich,Left Winger,R,56%,4,Manuel Neuer,22%,"1,93",5,4,Saved,-3
+Nicola,26/10/2019,Sebastian Andersson,Centre-Forward,R,80%,4,Manuel Neuer,22%,"1,93",4,4,Saved,-2
+Nicola,15/02/2017,Alexis Sanchez,Centre-Forward,R,50%,4,Manuel Neuer,22%,"1,93",5,4,Saved,-1
+Nicola,9/11/2025,Domenico Berardi,Right Winger,L,88%,6,Marco Carnesecchi,33%,"1,91",5,4,Goal,1
+Nicola,27/04/2025,Jesper Karlsson,Left Winger,R,84%,5,Marco Carnesecchi,33%,"1,91",6,4,Goal,1
+Nicola,22/12/2024,Sebastiano Esposito,Second Striker,R,95%,2,Marco Carnesecchi,33%,"1,91",4,6,Goal,0
+Nicola,12/05/2024,Lorenzo Pellegrini,Attacking Midfield,R,75%,4,Marco Carnesecchi,33%,"1,91",4,4,Goal,-1
+Nicola,03/03/2024,Joshua Zirkzee,Centre-Forward,R,83%,6,Marco Carnesecchi,33%,"1,91",5,5,Goal,0
+Nicola,21/09/2025,Duvan Zapata,Centre-Forward,R,69%,5,Marco Carnesecchi,33%,"1,91",4,5,Saved,-3
+Nicola,17/09/2025,Bradley Barcola,Left Winger,R,0%,5,Marco Carnesecchi,33%,"1,91",2,5,Saved,2
+Nicola,28/02/2024,Lautaro Martinez,Centre-Forward,R,65%,4,Marco Carnesecchi,33%,"1,91",6,4,Saved,2
+Nicola,17/02/2024,Andrea Pinamonti,Centre-Forward,R,83%,4,Marco Carnesecchi,33%,"1,91",5,4,Saved,-1
+Nicola,22/02/2022,Alessio Da Cruz,Left Winger,R,50%,5,Marco Carnesecchi,33%,"1,91",5,5,Saved,0

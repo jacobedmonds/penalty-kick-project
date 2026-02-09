@@ -1,0 +1,618 @@
+---
+title: "Penalty Kick Project"
+author: "Jacob Edmonds"
+date: "2026-02-09"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE
+)
+library(tidyverse)
+library(ggplot2)
+library(scales)
+library(viridis)
+
+data <- read.csv("Champ_Data.csv")
+```
+
+```{r}
+data <- data %>% 
+  rename(
+    name          = Kicker.Name,
+    position      = Kicker.Position,
+    foot          = X.Lefty.RIghty.,
+    k_ability     = Kicker.Ability..,
+    ball_position = Quad..of.Ball,
+    g_ability     = Goalie..,
+    g_height      = Goalie.Height..m.,
+    g_position    = Quad..of.Goalie,
+    result        = Missed.Saved.Goal,
+    spread        = Spread.at.the.time,
+    steps         = Kickers.Steps
+  )
+```
+
+```{r}
+# Foot as categorical
+data$foot <- as.factor(data$foot)
+
+# Goalie height: convert comma-decimals to dot-decimals, then numeric
+data$g_height <- gsub(",", ".", data$g_height)
+data$g_height <- as.numeric(data$g_height)
+
+# Kicker ability: remove "%" then numeric
+data$k_ability <- gsub("%", "", data$k_ability)
+data$k_ability <- as.numeric(data$k_ability)
+
+# Goalie ability: remove "%" then numeric
+data$g_ability <- gsub("%", "", data$g_ability)
+data$g_ability <- as.numeric(data$g_ability)
+```
+
+```{r}
+data$result <- tolower(data$result)
+
+data$result <- dplyr::recode(
+  data$result,
+  "goal"        = "goal",
+  "missed goal" = "miss",
+  "missed"      = "miss",
+  "miss"        = "miss",
+  "saved"       = "save",
+  "save"        = "save",
+  .default      = NA_character_
+)
+
+data$result <- factor(data$result, levels = c("goal", "miss", "save"))
+```
+
+```{r}
+# Ball + goalie positions as categorical
+data$ball_position <- as.factor(data$ball_position)
+data$g_position    <- as.factor(data$g_position)
+
+# Standardize text formatting in position, name, and GoalKeeper
+data <- data %>% 
+  mutate(
+    position = position %>%
+      str_trim() %>%            
+      str_replace_all("-", " ") %>% 
+      str_squish() %>%         
+      str_to_title(),
+    
+    name = name %>%
+      str_replace_all("\\t", "") %>%
+      str_trim() %>%
+      str_squish() %>%
+      str_to_title(),
+    
+    GoalKeeper = GoalKeeper %>%
+      str_replace_all("\\t", "") %>%
+      str_trim() %>%
+      str_squish() %>%
+      str_to_title()
+  )
+
+data$position <- as.factor(data$position)
+```
+
+```{r}
+numeric_vars <- c("k_ability", "g_ability", "g_height", "steps", "spread")
+
+df_long <- data %>%
+  pivot_longer(
+    cols = all_of(numeric_vars),
+    names_to = "variable",
+    values_to = "value"
+  )
+
+ggplot(df_long, aes(x = "", y = value, fill = variable)) +
+  geom_boxplot(alpha = 0.8) +
+  stat_summary(fun = "mean", geom = "point", size = 2, color = "red") +
+  facet_wrap(~ variable, scales = "free_y") +
+  labs(title = "Numerical Variables (Boxplot + Mean)", x = NULL, y = "Value") +
+  theme_minimal() +
+  theme(
+    axis.text.x  = element_blank(),
+    axis.ticks.x = element_blank(),
+    legend.position = "none"
+  ) +
+  scale_fill_brewer(palette = "Set2")
+
+```
+```{r}
+cat_vars <- c("position", "foot", "result")
+
+df_cat_long <- data %>%
+  pivot_longer(
+    cols = all_of(cat_vars),
+    names_to = "variable",
+    values_to = "value"
+  )
+
+ggplot(df_cat_long, aes(x = value, fill = variable)) +
+  geom_bar() +
+  facet_wrap(~ variable, scales = "free_x") +
+  labs(title = "Categorical Variable Frequencies", x = NULL, y = "Count") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+
+```{r}
+goal_layout <- tibble(
+  pos = factor(1:6),
+  x   = c(1, 2, 3, 1, 2, 3),
+  y   = c(2, 2, 2, 1, 1, 1)
+)
+```
+
+```{r}
+ball_stats <- data %>%
+  count(ball_position) %>%
+  mutate(
+    ball_position = factor(ball_position),
+    perc = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  )
+
+off_goal <- ball_stats %>%
+  filter(ball_position == 7) %>%
+  pull(perc_label)
+
+ball_heat <- ball_stats %>%
+  filter(ball_position != 7) %>%
+  left_join(goal_layout, by = c("ball_position" = "pos"))
+
+ggplot(ball_heat, aes(x = x, y = y, fill = perc)) +
+  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+            fill = NA, color = "black", linewidth = 1.2,
+            inherit.aes = FALSE) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = perc_label), color = "grey", size = 5, fontface = "bold") +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = 1:3) +
+  scale_y_continuous(breaks = 1:2) +
+  coord_fixed() +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank(),
+    plot.caption = element_text(hjust = 0, face = "italic")
+  ) +
+  labs(
+    title = "Ball Position Heatmap",
+    caption = paste("Off-target (pos=7) =", off_goal),
+    x = NULL, y = NULL
+  )
+
+```
+```{r}
+g_heat <- data %>%
+  count(g_position) %>%
+  mutate(
+    g_position = factor(g_position),
+    perc = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  ) %>%
+  left_join(goal_layout, by = c("g_position" = "pos"))
+
+ggplot(g_heat, aes(x = x, y = y, fill = perc)) +
+  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+            fill = NA, color = "black", linewidth = 1.2,
+            inherit.aes = FALSE) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = perc_label), color = "grey", size = 5, fontface = "bold") +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = 1:3) +
+  scale_y_continuous(breaks = 0:2) +
+  coord_fixed() +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Goalkeeper Position Heatmap",
+    x = NULL, y = NULL
+  )
+
+```
+```{r}
+ball_stats_res <- data %>%
+  count(result, ball_position) %>%
+  group_by(result) %>%
+  mutate(
+    ball_position = factor(ball_position),
+    perc        = n / sum(n),
+    perc_label  = percent(perc, accuracy = 0.1)
+  ) %>%
+  ungroup()
+
+off_goal_res <- ball_stats_res %>%
+  filter(ball_position == 7) %>%
+  transmute(result, off_label = paste0(result, " = ", perc_label))
+
+note_text <- paste(
+  "Out of goal:",
+  paste(off_goal_res$off_label, collapse = ", ")
+)
+
+ball_heat_res <- ball_stats_res %>%
+  filter(ball_position != 7) %>%
+  left_join(goal_layout, by = c("ball_position" = "pos"))
+
+ggplot(ball_heat_res, aes(x = x, y = y, fill = perc)) +
+  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+            fill = NA, color = "black", linewidth = 1.2,
+            inherit.aes = FALSE) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = perc_label), color = "grey", size = 4, fontface = "bold") +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = c(1,2,3), labels = c("Left", "Center", "Right")) +
+  scale_y_continuous(breaks = c(1,2), labels = c("Low", "High")) +
+  coord_fixed() +
+  facet_wrap(~ result) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank(),
+    plot.caption = element_text(hjust = 0, face = "italic")
+  ) +
+  labs(
+    title = "Shooting Distribution by Result",
+    caption = note_text,
+    x = NULL, y = NULL
+  )
+
+```
+```{r}
+ball_all <- data %>%
+  count(ball_position) %>%
+  mutate(
+    position   = factor(ball_position),
+    type       = "Ball",
+    perc       = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  ) %>%
+  select(type, position, perc, perc_label)
+
+g_all <- data %>%
+  count(g_position) %>%
+  mutate(
+    position   = factor(g_position),
+    type       = "Goalkeeper",
+    perc       = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  ) %>%
+  select(type, position, perc, perc_label)
+
+both_heat <- bind_rows(ball_all, g_all)
+
+off_both <- both_heat %>%
+  filter(position == 7) %>%
+  transmute(type, off_label = paste0(type, " = ", perc_label))
+
+note_text2 <- paste(
+  "Miss:",
+  paste(off_both$off_label, collapse = ", ")
+)
+
+both_heat_on <- both_heat %>%
+  filter(position != 7) %>%
+  left_join(goal_layout, by = c("position" = "pos"))
+
+ggplot(both_heat_on, aes(x = x, y = y, fill = perc)) +
+  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+            fill = NA, color = "black", linewidth = 1.2,
+            inherit.aes = FALSE) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = perc_label), color = "grey", size = 4, fontface = "bold") +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = c(1,2,3), labels = c("Left", "Center", "Right")) +
+  scale_y_continuous(breaks = c(1,2), labels = c("Low", "High")) +
+  coord_fixed() +
+  facet_wrap(~ type) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank(),
+    plot.caption = element_text(hjust = 0, face = "italic")
+  ) +
+  labs(
+    title = "Ball Position vs Goalkeeper Position",
+    caption = note_text2,
+    x = NULL, y = NULL
+  )
+
+```
+
+```{r}
+ball_res <- data %>%
+  filter(ball_position != 7) %>%
+  count(result, ball_position) %>%
+  group_by(result) %>%
+  mutate(
+    pos       = factor(ball_position),
+    ball_perc = n / sum(n)
+  ) %>%
+  ungroup() %>%
+  select(result, pos, ball_perc)
+
+gk_res <- data %>%
+  filter(g_position != 7) %>%
+  count(result, g_position) %>%
+  group_by(result) %>%
+  mutate(
+    pos     = factor(g_position),
+    gk_perc = n / sum(n)
+  ) %>%
+  ungroup() %>%
+  select(result, pos, gk_perc)
+
+combined <- expand_grid(
+  result = unique(data$result),
+  pos    = factor(1:6)
+) %>%
+  left_join(ball_res, by = c("result", "pos")) %>%
+  left_join(gk_res,  by = c("result", "pos")) %>%
+  mutate(
+    ball_perc = replace_na(ball_perc, 0),
+    gk_perc   = replace_na(gk_perc, 0),
+    label = paste0(
+      "B: ", percent(ball_perc, accuracy = 0.1), "\n",
+      "G: ", percent(gk_perc,   accuracy = 0.1)
+    )
+  ) %>%
+  left_join(goal_layout, by = "pos")
+
+ggplot(combined, aes(x = x, y = y, fill = ball_perc)) +
+  geom_rect(aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+            fill = NA, color = "black", linewidth = 1.2,
+            inherit.aes = FALSE) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = label), color = "white", size = 3.5, fontface = "bold") +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = c(1,2,3), labels = c("Left", "Center", "Right")) +
+  scale_y_continuous(breaks = c(1,2), labels = c("Low", "High")) +
+  coord_fixed() +
+  facet_wrap(~ result) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Ball vs Goalkeeper Position by Result",
+    x = NULL, y = NULL
+  )
+
+```
+```{r}
+data$goal_bin <- ifelse(data$result == "goal", 1, 0)
+
+ggplot(data, aes(x = steps, y = goal_bin)) +
+  geom_smooth(method = "loess", se = TRUE, color = "blue") +
+  theme_minimal() +
+  labs(
+    title = "Estimated Goal Probability vs Number of Steps",
+    x = "Steps",
+    y = "Goal Probability"
+  )
+
+```
+
+```{r}
+steps_summary <- data %>%
+  mutate(step_bin = cut(steps, breaks = c(0,2,4,6,8,10,15,20),
+                        include.lowest = TRUE)) %>%
+  group_by(step_bin) %>%
+  summarise(
+    n = n(),
+    goal_rate = mean(result == "goal"),
+    label = scales::percent(goal_rate, accuracy = 0.1),
+    .groups = "drop"
+  )
+
+ggplot(steps_summary, aes(x = step_bin, y = goal_rate, fill = goal_rate)) +
+  geom_col() +
+  geom_text(aes(label = label), color = "black", fontface = "bold") +
+  scale_fill_viridis_c() +
+  theme_minimal() +
+  labs(
+    title = "Goal% per Steps Interval",
+    x = "Steps (interval)",
+    y = "Goal Probability"
+  )
+
+```
+```{r}
+df_foot <- data %>%
+  count(foot, result) %>%
+  group_by(foot) %>%
+  mutate(
+    perc = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  )
+
+ggplot(df_foot, aes(x = foot, y = perc, fill = result)) +
+  geom_col(position = "fill", color = "black") +
+  geom_text(
+    aes(label = perc_label),
+    position = position_fill(vjust = 0.5),
+    color = "white", fontface = "bold", size = 4
+  ) +
+  scale_y_continuous(labels = percent) +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal() +
+  labs(
+    title = "Foot × Result Distribution",
+    x = "Foot",
+    y = "Percent"
+  )
+
+```
+
+```{r}
+foot_ball <- data %>%
+  filter(ball_position != 7) %>%
+  count(foot, ball_position) %>%
+  group_by(foot) %>%
+  mutate(
+    ball_position = factor(ball_position),
+    perc = n / sum(n),
+    perc_label = percent(perc, accuracy = 0.1)
+  ) %>%
+  ungroup() %>%
+  left_join(goal_layout, by = c("ball_position" = "pos"))
+
+ggplot(foot_ball, aes(x = x, y = y, fill = perc)) +
+  geom_rect(
+    aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+    fill = NA, color = "black", linewidth = 1.2,
+    inherit.aes = FALSE
+  ) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = perc_label),
+            color = "white", fontface = "bold", size = 4) +
+  scale_fill_viridis(option = "C", direction = 1) +
+  scale_x_continuous(breaks = c(1,2,3), labels = c("Left", "Center", "Right")) +
+  scale_y_continuous(breaks = c(1,2), labels = c("Low", "High")) +
+  coord_fixed() +
+  facet_wrap(~ foot) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Shooting Distribution: Foot × Ball Position",
+    x = NULL, y = NULL
+  )
+
+```
+
+```{r}
+data_result_steps <- data %>%
+  mutate(
+    goal_vs_not = if_else(result == "goal", "Goal", "Not Goal"),
+    goal_vs_not = factor(goal_vs_not, levels = c("Goal", "Not Goal"))
+  ) %>%
+  filter(!is.na(goal_vs_not), !is.na(steps))
+
+fig_result_steps <- ggplot(data_result_steps,
+                           aes(x = goal_vs_not, y = steps, fill = goal_vs_not)) +
+  geom_boxplot(alpha = 0.75, outlier.shape = NA) +
+  geom_jitter(width = 0.15, alpha = 0.35, size = 1.8) +
+  scale_fill_manual(values = c("#4CAF50", "#E57373")) +  
+  labs(
+    title = "Run-up Steps by Penalty Result",
+    subtitle = "Goal vs Not Goal (Saved + Missed)",
+    x = "Penalty Result",
+    y = "Run-up Steps"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5)
+  )
+
+fig_result_steps
+```
+
+```{r}
+
+df <- data %>%
+  mutate(
+    ball_pos_num = as.numeric(as.character(ball_position)),
+    steps_num    = as.numeric(steps),
+    step_routine = case_when(
+      steps_num < 4  ~ "Shortened (<4)",
+      steps_num <= 8 ~ "Normal (4–8)",
+      steps_num > 8  ~ "Lengthened (>8)",
+      TRUE ~ NA_character_
+    ),
+    step_routine = factor(
+      step_routine,
+      levels = c("Shortened (<4)", "Normal (4–8)", "Lengthened (>8)")
+    )
+  ) %>%
+  filter(!is.na(step_routine))
+
+# Denominator: total PK attempts per routine (includes pos=7)
+routine_totals <- df %>%
+  group_by(step_routine) %>%
+  summarise(total_n = n(), .groups = "drop")
+
+# Off-target rate for caption (pos=7)
+off_target <- df %>%
+  group_by(step_routine) %>%
+  summarise(
+    off_n = sum(ball_pos_num == 7, na.rm = TRUE),
+    total_n = n(),
+    off_rate = off_n / total_n,
+    .groups = "drop"
+  ) %>%
+  mutate(off_label = paste0(as.character(step_routine), " = ", scales::percent(off_rate, 0.1)))
+
+caption_text <- paste("Missed (pos=7) rate:", paste(off_target$off_label, collapse = ", "))
+
+# Numerators: counts for zones 1–6 only, but perc uses total_n including 7
+ball_steps <- df %>%
+  filter(ball_pos_num %in% 1:6) %>%
+  count(step_routine, ball_pos_num, name = "n") %>%
+  left_join(routine_totals, by = "step_routine") %>%
+  mutate(
+    perc  = n / total_n,  # <-- key change
+    label = paste0(scales::percent(perc, 0.1), "\n(n=", n, ")"),
+    ball_position = factor(ball_pos_num)
+  ) %>%
+  left_join(goal_layout, by = c("ball_position" = "pos"))
+
+ggplot(ball_steps, aes(x = x, y = y, fill = perc)) +
+  geom_rect(
+    aes(xmin = 0.5, xmax = 3.5, ymin = 0.5, ymax = 2.5),
+    fill = NA, color = "black", linewidth = 1.2,
+    inherit.aes = FALSE
+  ) +
+  geom_tile(color = "grey20") +
+  geom_text(aes(label = label), color = "white", fontface = "bold", size = 4) +
+  scale_fill_viridis(option = "B", direction = 1) +
+  scale_x_continuous(breaks = c(1,2,3), labels = c("Left", "Center", "Right")) +
+  scale_y_continuous(breaks = c(1,2), labels = c("Low", "High")) +
+  coord_fixed() +
+  facet_wrap(~ step_routine) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid = element_blank(),
+    plot.caption = element_text(hjust = 0, face = "italic")
+  ) +
+  labs(
+    title = "Ball Position Distribution by Step Routine",
+    subtitle = "Shortened (<4), Normal (4–8), Lengthened (>8); percentages include off-target",
+    caption = caption_text,
+    x = NULL, y = NULL
+  )
+```
+
+
+```{r}
+test_data <- data %>%
+  mutate(goal_vs_not = if_else(result == "goal", "Goal", "Not Goal")) %>%
+  filter(!is.na(goal_vs_not), !is.na(steps))
+
+shapiro.test(test_data$steps[test_data$goal_vs_not == "Goal"])
+shapiro.test(test_data$steps[test_data$goal_vs_not == "Not Goal"])
+
+wilcox_test <- wilcox.test(steps ~ goal_vs_not, data = test_data)
+wilcox_test
+```
+
+
