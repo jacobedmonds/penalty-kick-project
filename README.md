@@ -5,7 +5,7 @@ This project analyzes how **run-up step routines** relate to **shot placement** 
 The analysis was completed as part of **STOR 538** and includes a full statistical write-up, visualizations, and reproducible code.
 
 ---
-
+```
 penalty-kick-project/
 ├── README.md
 ├── code/
@@ -17,7 +17,7 @@ penalty-kick-project/
 ├── figures/
 │ ├── fig1_steps.pdf
 │ └── fig2_ball_steps.pdf
-
+```
 ---
 
 ## Data Description
