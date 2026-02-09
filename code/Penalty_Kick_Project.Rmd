@@ -19,8 +19,7 @@ if (length(to_install)) {
 
 lapply(pkgs, library, character.only = TRUE)
 
-data <- read.csv(here("data", "Champ_Data.csv"))
-
+data <- read.csv(here("Champ_Data.csv"))
 ```
 
 ## Data Cleaning and Preparation
