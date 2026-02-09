@@ -53,7 +53,7 @@ The dataset was constructed using Transfermarkt and manual video coding from You
 
 ## How to Run the Code
 
-### Option 1: RStudio (recommended)
+### Option 1: RStudio 
 
 1. Clone or download this repository.
 2. Open `code/Penalty_Kick_Project.Rmd` in RStudio.
@@ -61,4 +61,10 @@ The dataset was constructed using Transfermarkt and manual video coding from You
 
 ```r
 install.packages(c("tidyverse", "ggplot2", "scales", "viridis", "here"))
+```
+### Option 2: R Console
+```
+install.packages(c("rmarkdown", "tidyverse", "ggplot2", "scales", "viridis", "here"))
+rmarkdown::render("code/Penalty_Kick_Project.Rmd")
+```
 
