@@ -69,6 +69,16 @@ rmarkdown::render("code/Penalty_Kick_Project.Rmd")
 ```
 ---
 
+## Project Context
+This was a team-based course project completed for STOR 538 (Sports Analytics) at UNC–Chapel Hill.
+
+## My Contributions
+- Collected and coded penalty-kick data from public sources and video review
+- Performed exploratory data analysis to identify meaningful patterns and hypotheses
+- Assessed distributional assumptions using Shapiro–Wilk normality tests
+- Applied nonparametric inference (Wilcoxon rank-sum tests) to compare run-up behavior
+- Collaborated on interpreting results with a coaching-oriented perspective
+
 ## Collaborators
 - Jacob Edmonds
 - Nicola Artuso
