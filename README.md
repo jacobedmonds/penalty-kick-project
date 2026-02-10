@@ -67,4 +67,12 @@ install.packages(c("tidyverse", "ggplot2", "scales", "viridis", "here"))
 install.packages(c("rmarkdown", "tidyverse", "ggplot2", "scales", "viridis", "here"))
 rmarkdown::render("code/Penalty_Kick_Project.Rmd")
 ```
+---
 
+## Collaborators
+- Jacob Edmonds
+- Nicola Artuso
+- Blake Bridges
+- Sarah Rayen
+- Jassenia Tasleem
+- David Waitt
